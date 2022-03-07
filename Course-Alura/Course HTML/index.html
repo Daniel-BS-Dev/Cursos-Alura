@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- A tag DOCTYPE serve para informar ao navegador qual versão do HTML estamos usando. -->
+<html lang="pt-br"><!-- definir a linguagem da página -->
+    <head><!-- informações que estão sendo passadas para o navegador -->
+        <meta charset="UTF-8"><!-- dicionario que estou usando. Para poder escrever em português no navegador -->
+        <title>first-step</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> <!-- css externo -->
+    
+         <style>
+             img:active{
+                 border:3px solid green ;
+             }
+
+             label, input[type='radio']{
+                 background-color: red;
+             }
+
+             fieldset{
+                 border: none;
+                
+             }
+
+            .send{
+                width: 200px;
+                height: 50px;
+                background: red;
+                transition: 1s background; /* a mudança vai acontecer  apenas com o background */
+                transition: 1s all; /* a mudança vai acontecer  com tds os elementos */
+            }
+
+            .send:hover{
+                background: orange;
+                transform: scale(2);
+                transform: rotate(180deg) scale(2);
+              
+            }
+
+
+         </style>
+    </head>
+    <body><!-- conteudo que estão sendo passadas para o navegador -->
+        <img src="image/banner.jpg" />
+        <p style="font-size:80px">&copy; Daniel benedito</p> <!-- unicode não pode ser copiado -->
+
+        <form>
+            <fieldset><legend>Dados do usuario</legend><!-- para melhor organização do codigo em campos checkbox e radio-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" required/> <!-- required campo obrigatorio -->
+
+            <label for="live" ><input type="radio" name="contact" value="email" checked id="live">Casa</label><!-- value é o que o meu back vai receber
+             name e para marcar apenas uma opção 
+            checked já deixa minha opção marcada -->
+        </fieldset>
+
+        <input type="submit" value="enviar" class="send">
+        </form>
+
+        <!-- position: absolute, eu consigo posicionar meu elemento em qualquer lugar da página. -->
+
+        <!--
+            A criar uma tabela HTML
+            A tag table, que representa a tabela
+            A tag tr, que representa a linha da tabela
+            A tag td, que representa a célula da tabela
+            A tag thead, que representa o cabeçalho da tabela
+            A tag tbody, que representa o corpo da tabela
+            A tag th, que representa a célula do cabeçalho da tabela
+            A tag tfoot, que representa o rodapé da tabela
+            A estilizar a tabela
+        -->
+    </body>
+</html>
