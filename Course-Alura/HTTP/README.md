@@ -65,4 +65,30 @@ Por exemplo:
 - URNs podem identificar ideias e conceitos. Eles não estão restritos a documentos, mas quando eles representam documentos podem ser convertidos a URLs por um “resolver”. A partir daí o documento pode ser baixado através de uma URL.
 
 
+# STATUS CODE 
 
+- 2XX - Successful response
+- 3XX - Redirection messages
+- 4xx - Client error responses
+- 5xx - Server error responses
+
+- 200 OK
+- 301 Moved Permanently
+- 404 Not Found
+- 500 Internal Server Error
+
+# CAMINHO COM MAIS PARAMETROS
+
+HTTPS://LOCALHOST?RESULTS=CARRO&COLOR=BLACK
+
+# METHODS
+
+- GET - Receber dados (params na URL)
+- POST - Submeter dados(params no corpr da requisição)
+- DELETE - Remover um recurso
+- PUT - Atualizar
+
+# HPACK
+
+O HPACK é uma tecnologia especializada em comprimir os Headers das comunicações HTTP/2. Como toda requisição HTTP acompanha algum header por padrão, uma tecnologia de compressão embutida no protocolo é demasiadamente útil para economizar dados trafegados. Guarda os dados
+Quando estamos utilizando Headers Stateful, simplesmente colocamos nas requisições os cabeçalhos que se alteraram entre uma e outra, trazendo uma enorme economia de dados, visto que toda requisição HTTP possui um cabeçalho e que, muitas vezes, no HTTP/1.1, cabeçalhos repetidos eram trafegados em todas as requisições.
