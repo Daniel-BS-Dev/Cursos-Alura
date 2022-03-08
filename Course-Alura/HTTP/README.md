@@ -1,4 +1,21 @@
+# O que é HTTP
+ É um protocolo de comunicação entre sistemas de informação que permite a transferência de dados entre redes de computadores, principalmente na World Wide Web (Internet).
+
 # HTTPS
+
+O HTTPS não guarda estado cada requisição ela é unica no mundo web, sendo assim através do login a minha requisição manda uma mensagem para o navegador para ele guardar minhas informações a tecnologia de sessão só é possivel por que no navegador guarda cookies
+
+# HTTP (REQUEST-RESPONSE)
+- O protocolo HTTP segue o modelo REQUISIÇÃO-RESPOSTA
+- Uma requisição precisa ter todas as informações para o servidor gerar a resposta
+- HTTP é STATLESS!(Não matém informações entre requisições, não guarda estado)
+- As plataformas de desenvolvimento usam sessões para guardar informações entre requisições
+
+# O que é uma sessão HTTP
+
+Uma sessão HTTP nada mais é que um tempo que o cliente permanece ativo no sistema! Isso é parecido com uma sessão no cinema. Uma sessão, nesse contexto, é o tempo que o cliente usa a sala no cinema para assistir a um filme. Quando você sai da sala, termina a sessão. Ou seja, quando você se desloga, a Alura termina a sua sessão.
+
+# Segurança HTTPS
 
 No certificado, vem a chave pública para o cliente utilizar, certo? E o servidor continua na posse da chave privada, ok? Isso é seguro, mas lento e por isso o cliente gera uma chave simétrica ao vivo. Uma chave só para ele e o servidor com o qual está se comunicando naquele momento! Essa chave exclusiva (e simétrica) é então enviada para o servidor utilizando a criptografia assimétrica (chave privada e pública) e então é utilizada para o restante da comunicação.
 
@@ -46,3 +63,6 @@ Por exemplo:
 - urn:uuid:6e8bc430-9c3a-11d9-9669-0800200c9a66 como un identificador global único
 - urn:publishing:book como um XML que identifica um documento como um tipo de livro
 - URNs podem identificar ideias e conceitos. Eles não estão restritos a documentos, mas quando eles representam documentos podem ser convertidos a URLs por um “resolver”. A partir daí o documento pode ser baixado através de uma URL.
+
+
+
