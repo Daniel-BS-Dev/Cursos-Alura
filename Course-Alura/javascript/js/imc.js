@@ -1,14 +1,9 @@
 let tdwieght = document.querySelector(".info-peso");
 let tdheigth = document.querySelector(".info-altura");
 let tdimc = document.querySelector(".info-imc");
-
-let wieghtValid = true;
-let heightValid = true;
-
-
+let buttoncreate = document.querySelector(".button-create");
 
 const tr = document.querySelectorAll(".paciente").forEach((trs) => {
-  console.log(trs);
 
   let tdwieght = trs.querySelector(".info-peso");
   let tdheigth = trs.querySelector(".info-altura");
@@ -16,26 +11,52 @@ const tr = document.querySelectorAll(".paciente").forEach((trs) => {
   let wieght = tdwieght.textContent;
   let height = tdheigth.textContent;
 
-  if (wieght <= 0 || wieght >= 500) {
+  let validWieght = invalidWieght(wieght);
+  let validHeight = invalidHieght(height);
+
+  if (validWieght) {
     console.log("peso ivalido");
-    wieghtValid = false;
+    validWieght = false;
     tdimc.textContent = "Peso invalido";
     trs.classList.add("pacient-invalid")
+    
   }
-  if (height <= 0 || height >= 10) {
+  if (validHeight) {
     console.log("altura invalida");
-    heightValid = false;
+    validHeight = false;
     tdimc.textContent = "Altura invalido";
     trs.classList.add("pacient-invalid")
   }
-  if (!heightValid && !wieghtValid) {
+  if (validHeight && validWieght) {
     tdimc.textContent = "Altura é Peso invalido";
     trs.classList.add("pacient-invalid")
   }
   
-  if (wieghtValid && heightValid) {
-    let imc = wieght / (height * height);
-    tdimc.textContent = imc.toFixed(2);
+  if (!validWieght && !validHeight) {
+    let imc = sumImc(height,wieght)
+    tdimc.textContent = imc;
   }
 
-});
+ 
+  });
+
+  function sumImc(height, wieght){
+     let imc = wieght / (height * height)
+     return imc.toFixed(2);
+  }
+
+  function invalidWieght(wieght){
+    if(wieght <= 0 || wieght >= 500){
+       return true;
+    }else{
+      return false
+    }
+  }
+
+  function invalidHieght(height){
+    if(height <= 0 || height >= 10){
+      return true;
+    }else{
+      return false;
+    }
+  }
