@@ -17,11 +17,26 @@
 - git log --pretty="format:%H %s %ae" - Mostra apenas o resh, messagem e autor
 - .gitignore - Pasta criada para o git igonorar 
 - git remote -v - mostra o endereço do local
-- git clone 
+- git clone "caminho" - para clonar
+- git remote rename "nomeAtual" "novoNome"
 
 ## Criando um repositorio remoto
-## Na pasta servidor 
+### Criando um servidor 
 - git init --bare - Vai servir para armazenar as alterações, só contém as alterações. Não contém copia
 
 ### Adicionando um repositorio remoto na pasta daniel
 - git remote add 'name' 'caminho'
+- git remote - mostra o nome da pasta
+- git remote  -v mostra o fetch e o push
+
+### Criando uma pasta pra Ana
+- mkdir ana - pasta e nome
+- cd ana - entrado na pasta
+- git clone "caminha do servidor" exemplo do caminho: /c/todas/as/pastas/ nome da pasta
+
+## Salvando alterações do git
+### na pasta daniel
+- git push "nomerepositorioremoto" master - enviando as informações para o servidor
+
+### na pasta da ana project
+- git pull "nome" master - para trazer os dados
