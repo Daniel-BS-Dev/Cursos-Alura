@@ -1,0 +1,7 @@
+C:\workspace\curso HTML alura\Course-Alura\C#\LearnCSharp\bin\Debug\LearnCSharp.exe.config
+C:\workspace\curso HTML alura\Course-Alura\C#\LearnCSharp\bin\Debug\LearnCSharp.exe
+C:\workspace\curso HTML alura\Course-Alura\C#\LearnCSharp\bin\Debug\LearnCSharp.pdb
+C:\workspace\curso HTML alura\Course-Alura\C#\LearnCSharp\obj\Debug\LearnCSharp.csproj.AssemblyReference.cache
+C:\workspace\curso HTML alura\Course-Alura\C#\LearnCSharp\obj\Debug\LearnCSharp.csproj.CoreCompileInputs.cache
+C:\workspace\curso HTML alura\Course-Alura\C#\LearnCSharp\obj\Debug\LearnCSharp.exe
+C:\workspace\curso HTML alura\Course-Alura\C#\LearnCSharp\obj\Debug\LearnCSharp.pdb
