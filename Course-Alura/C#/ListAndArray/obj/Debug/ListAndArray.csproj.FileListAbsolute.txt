@@ -1,0 +1,7 @@
+C:\workspace\curso HTML alura\Course-Alura\C#\ListAndArray\bin\Debug\ListAndArray.exe.config
+C:\workspace\curso HTML alura\Course-Alura\C#\ListAndArray\bin\Debug\ListAndArray.exe
+C:\workspace\curso HTML alura\Course-Alura\C#\ListAndArray\bin\Debug\ListAndArray.pdb
+C:\workspace\curso HTML alura\Course-Alura\C#\ListAndArray\obj\Debug\ListAndArray.csproj.AssemblyReference.cache
+C:\workspace\curso HTML alura\Course-Alura\C#\ListAndArray\obj\Debug\ListAndArray.csproj.CoreCompileInputs.cache
+C:\workspace\curso HTML alura\Course-Alura\C#\ListAndArray\obj\Debug\ListAndArray.exe
+C:\workspace\curso HTML alura\Course-Alura\C#\ListAndArray\obj\Debug\ListAndArray.pdb
