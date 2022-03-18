@@ -1,0 +1,7 @@
+C:\workspace\curso HTML alura\Course-Alura\C#\herança.polimorfismo.encapsulamento\bin\Debug\herança.polimorfismo.encapsulamento.exe.config
+C:\workspace\curso HTML alura\Course-Alura\C#\herança.polimorfismo.encapsulamento\bin\Debug\herança.polimorfismo.encapsulamento.exe
+C:\workspace\curso HTML alura\Course-Alura\C#\herança.polimorfismo.encapsulamento\bin\Debug\herança.polimorfismo.encapsulamento.pdb
+C:\workspace\curso HTML alura\Course-Alura\C#\herança.polimorfismo.encapsulamento\obj\Debug\herança.polimorfismo.encapsulamento.csproj.AssemblyReference.cache
+C:\workspace\curso HTML alura\Course-Alura\C#\herança.polimorfismo.encapsulamento\obj\Debug\herança.polimorfismo.encapsulamento.csproj.CoreCompileInputs.cache
+C:\workspace\curso HTML alura\Course-Alura\C#\herança.polimorfismo.encapsulamento\obj\Debug\herança.polimorfismo.encapsulamento.exe
+C:\workspace\curso HTML alura\Course-Alura\C#\herança.polimorfismo.encapsulamento\obj\Debug\herança.polimorfismo.encapsulamento.pdb

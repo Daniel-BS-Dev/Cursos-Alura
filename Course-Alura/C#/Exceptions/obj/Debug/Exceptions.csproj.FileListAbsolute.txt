@@ -1,0 +1,7 @@
+C:\workspace\curso HTML alura\Course-Alura\C#\Exceptions\bin\Debug\Exceptions.exe.config
+C:\workspace\curso HTML alura\Course-Alura\C#\Exceptions\bin\Debug\Exceptions.exe
+C:\workspace\curso HTML alura\Course-Alura\C#\Exceptions\bin\Debug\Exceptions.pdb
+C:\workspace\curso HTML alura\Course-Alura\C#\Exceptions\obj\Debug\Exceptions.csproj.AssemblyReference.cache
+C:\workspace\curso HTML alura\Course-Alura\C#\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\workspace\curso HTML alura\Course-Alura\C#\Exceptions\obj\Debug\Exceptions.exe
+C:\workspace\curso HTML alura\Course-Alura\C#\Exceptions\obj\Debug\Exceptions.pdb

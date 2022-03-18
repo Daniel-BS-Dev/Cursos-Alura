@@ -8,7 +8,7 @@
         private int numero;
         private double _saldo; // o _ quer dizer que o campo é privado, adotado como boa pratica
 
-        public static int TotalDeContasCriadas { get; set; } // static quer dizer que o atributo pertence a classe. Vai ser usado apenas na classe
+        public static int TotalDeContasCriadas { get; private set; } // static quer dizer que o atributo pertence a classe. Vai ser usado apenas na classe
 
 
         public AcountCorrent()
