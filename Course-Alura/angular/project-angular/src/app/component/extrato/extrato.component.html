@@ -1,0 +1,19 @@
+<section class="container-extract">
+  <table class="content-extract">
+    <thead>
+      <th>Data</th>
+      <th>Valor</th>
+      <th>Destino</th>
+    </thead>
+    <tbody *ngIf="toSendValue?.length > 0; else emptyList">
+      <tr *ngFor="let send of toSendValue">
+        <td>{{ send?.date | date: "short" }}</td>
+        <td>{{ send?.valueOrigin | currency }}</td>
+        <td>{{ send?.valueDestiny }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #emptyList>
+    <p>Nenhuma operação feita</p>
+  </ng-template>
+</section>
