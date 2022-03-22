@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Tranferencia } from 'src/app/models/models';
 import { ServiceService } from '../service.service';
 
 @Component({
@@ -18,7 +19,10 @@ export class ExtratoComponent implements OnInit {
   constructor(private service: ServiceService) { }
 
   ngOnInit(): void {
-    this.toSendValue = this.service.getToSend;
+    this.service.read().subscribe((tranferencia: Tranferencia[]) => {
+      this.toSendValue = tranferencia;
+
+    });
 
   }
 

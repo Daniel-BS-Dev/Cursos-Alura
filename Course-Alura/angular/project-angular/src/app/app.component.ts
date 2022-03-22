@@ -12,9 +12,4 @@ export class AppComponent {
   constructor(private service: ServiceService){
 
   }
-
-  transferir($event){ // recebendo os valores da minha tranferencia
-    this.service.addValue($event);
-
-  }
 }

@@ -15,16 +15,23 @@
   th{
     border-bottom: 2px solid green;
     color: green;
-  }
+    
+ }
 
   td {
     font-family: "Courier New", Courier, monospace;
     font-weight: 900;
+    
   }
 }
 
 tbody{
     padding-top: 15px;
+
+    td{
+      padding: 10px 0px;
+      border-bottom: 1px solid #c1c1c1;
+    }
 }
 
 tr td:nth-child(even){

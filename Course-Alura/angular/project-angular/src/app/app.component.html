@@ -1,10 +1,16 @@
-<app-transferencia (aoTransferir)="transferir($event)"></app-transferencia>
-<app-extrato></app-extrato>
+<header>
+    <a routerLink="extrato">Extrato</a>
+    <a routerLink="transferencia"  routerLinkActive="active">nova transferencia</a>
+</header>
 
+<main>
+    <router-outlet></router-outlet>
+</main>
 
 
 
 <!--
+   
     aqui eu estou chamando o meu metodo ao transferir, 
     transferir é o nome do meu novo metodo,
     não posso esquecer de colocar o $event por é através dele que eu tenho acesso as informações

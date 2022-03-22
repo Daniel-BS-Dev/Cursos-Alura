@@ -1,0 +1,52 @@
+{
+  "tranferencias": [
+    {
+      "id": 1,
+      "valueOrigin": 35,
+      "valueDestiny": "1212-1",
+      "date": "2020-11-06T21:34:17.155Z"
+    },
+    {
+      "id": 1,
+      "valueOrigin": 35,
+      "valueDestiny": "1212-1",
+      "date": "2020-11-06T21:34:17.155Z"
+    },
+    {
+      "valueOrigin": "2342",
+      "valueDestiny": "2342123",
+      "date": "2022-03-22T13:39:39.472Z",
+      "id": 2
+    },
+    {
+      "valueOrigin": "123",
+      "valueDestiny": "234",
+      "date": "2022-03-22T13:39:54.907Z",
+      "id": 3
+    },
+    {
+      "valueOrigin": "2342123",
+      "valueDestiny": "2342",
+      "date": "2022-03-22T13:41:16.117Z",
+      "id": 4
+    },
+    {
+      "valueOrigin": "2342",
+      "valueDestiny": "2342123",
+      "date": "2022-03-22T14:04:14.040Z",
+      "id": 5
+    },
+    {
+      "valueOrigin": "2342",
+      "valueDestiny": "2342123",
+      "date": "2022-03-22T14:33:35.189Z",
+      "id": 6
+    },
+    {
+      "valueOrigin": "2342",
+      "valueDestiny": "2342123",
+      "date": "2022-03-22T14:41:54.297Z",
+      "id": 7
+    }
+  ]
+}

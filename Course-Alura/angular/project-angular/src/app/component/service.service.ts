@@ -1,4 +1,8 @@
+import { Tranferencia } from 'src/app/models/models';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -6,8 +10,10 @@ import { Injectable } from '@angular/core';
 export class ServiceService {
 
   private listSendValue : any[];
+  private baseUrl = "http://localhost:3001/tranferencias";
 
-  constructor() {
+
+  constructor(private http: HttpClient) {
     this.listSendValue = [];
    }
 
@@ -15,9 +21,13 @@ export class ServiceService {
       return this.listSendValue;
    }
 
-   addValue(value: any ){
-    this.hidrater(value);
-    this.listSendValue.push(value);
+   read(): Observable<Tranferencia[]>{
+      return this.http.get<Tranferencia[]>(this.baseUrl)
+   }
+
+   addValue(value: Tranferencia): Observable<Tranferencia>{
+      this.hidrater(value);
+      return this.http.post<Tranferencia>(this.baseUrl, value);
    }
 
    private hidrater(value: any){
