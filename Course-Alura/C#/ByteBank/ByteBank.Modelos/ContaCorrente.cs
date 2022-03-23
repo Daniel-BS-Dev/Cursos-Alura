@@ -18,7 +18,7 @@ namespace ByteBank.Modelos
         public int ContadorTransferenciasNaoPermitidas { get; private set; }
 
         public int Numero { get; }
-        public int Agencia { get; }
+        public int NumberAgencia { get; }
 
         private double _saldo = 100;
         public double Saldo
@@ -38,6 +38,12 @@ namespace ByteBank.Modelos
             }
         }
 
+        /// <summary>
+        /// Construct with param
+        /// </summary>
+        /// <exception cref="ArgumentException">Exeçao de verificação do numero<paramref name="agencia"/></exception>
+        /// <param name="agencia">Representa a <see cref="NumberAgencia"/> agencia</param>
+        /// <param name="numero">Representa o numero da conta</param>
         public ContaCorrente(int agencia, int numero)
         {
             if (numero <= 0)
@@ -50,7 +56,7 @@ namespace ByteBank.Modelos
                 throw new ArgumentException("O argumento numero deve ser maior que 0.", nameof(numero));
             }
 
-            Agencia = agencia;
+            NumberAgencia = agencia;
             Numero = numero;
 
             TotalDeContasCriadas++;

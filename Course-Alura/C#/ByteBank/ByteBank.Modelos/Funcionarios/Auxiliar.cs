@@ -8,6 +8,10 @@ namespace ByteBank.Modelos.Funcionarios
 {
     public class Auxiliar : Funcionario
     {
+        /// <summary>
+        /// construct with a param
+        /// </summary>
+        /// <param name="cpf"></param>
         public Auxiliar(string cpf) : base(2000, cpf)
         {
         }

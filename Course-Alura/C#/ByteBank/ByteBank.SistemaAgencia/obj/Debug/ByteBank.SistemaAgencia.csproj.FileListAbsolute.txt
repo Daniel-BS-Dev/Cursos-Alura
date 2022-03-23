@@ -1,0 +1,11 @@
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.AssemblyReference.cache
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.CoreCompileInputs.cache
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.SistemaAgencia.exe.config
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.SistemaAgencia.exe
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.SistemaAgencia.pdb
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.Modelos.dll
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.Modelos.pdb
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.CopyComplete
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.exe
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.pdb
+C:\workspace\curso HTML alura\Course-Alura\C#\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.Modelos.xml
