@@ -22,3 +22,12 @@
 - arquivo de documentação xml
 - fecha
 - recompila
+
+
+## Biblioteca do nuget
+`
+https://www.nuget.org
+`
+- Ferramenta
+- nuget
+- console
