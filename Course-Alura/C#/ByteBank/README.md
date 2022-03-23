@@ -11,6 +11,7 @@
 /// <summary>
         /// Construct with param
         /// </summary>
+        /// <exception cref="ArgumentException">Exeçao de verificação do numero<paramref name="agencia"/></exception>
         /// <param name="agencia">Representa a <see cref="NumberAgencia"/> agencia</param>
         /// <param name="numero">Representa o numero da conta</param>
 `
