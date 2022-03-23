@@ -4,3 +4,20 @@
 ## Separando minhas classes 
 - Biblioteca de classes (.Net Framework)
 - Feito isso tevo refereciar o meu projeto com minha biblioteca
+
+## Documentando o codigo
+
+`
+/// <summary>
+        /// Construct with param
+        /// </summary>
+        /// <param name="agencia">Representa a <see cref="NumberAgencia"/> agencia</param>
+        /// <param name="numero">Representa o numero da conta</param>
+`
+
+## Criando documentação
+- propriedade
+- build
+- arquivo de documentação xml
+- fecha
+- recompila
