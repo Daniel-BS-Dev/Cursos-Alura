@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -42,8 +43,9 @@ namespace Alura.ListaLeitura.App
         {
             var livro = new Livro()
             {
-                Titulo = context.Request.Query["titulo"], 
-                Autor = context.Request.Query["autor"]
+                Titulo = context.Request.Form["titulo"].First(),
+                Autor = context.Request.Form["autor"].First() // assim pego informações do corpo
+                //Autor = context.Request.Query["autor"].First() desta forma eu estou pegando s informações da url
             };
 
             var repo = new LivroRepositorioCSV();
@@ -55,15 +57,17 @@ namespace Alura.ListaLeitura.App
         // exibindo um formulario na tela
         private Task ExibirFormulario(HttpContext context)
         {
-            var html = @"
-             <html>
-               <form action='/Cadastro/Incluir'>
-                 <input name='titulo'>
-                 <input name='autor'>
-                 <button>Gravar</button>
-               </form>
-             </html>";
-        return context.Response.WriteAsync(html);
+            var html = CarregaArquivoHTML("formulario");
+            return context.Response.WriteAsync(html);
+        }
+
+        private string CarregaArquivoHTML(string nomeArquivo)
+        {
+            var nomeCompletoArquivo = $"HTML/{nomeArquivo}.html";
+            using (var arquivo = File.OpenText(nomeCompletoArquivo))
+            {
+                return arquivo.ReadToEnd();
+            }
         }
 
         // metodo que pega pelo id
@@ -116,7 +120,8 @@ namespace Alura.ListaLeitura.App
         private Task LivrosParaLer(HttpContext context)
         {
             var _rep = new LivroRepositorioCSV();
-            return context.Response.WriteAsync(_rep.ParaLer.ToString());
+            var conteudoArquivo = CarregaArquivoHTML("para-ler");
+            return context.Response.WriteAsync(conteudoArquivo);
         }
 
         // escrevendo na tela
