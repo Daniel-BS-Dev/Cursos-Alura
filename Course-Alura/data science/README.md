@@ -119,5 +119,20 @@ sns.barplot(x="original_language", y="total", data = contagem_de_lingua)
 - notas_do_jumanji = notas.query("filme==2") - pegando informações do jumanji
 - print(len(notas_do_toy_story), len(notas_do_jumanji))
 - pint("Nota media do Toy Story %.2f" % notas_do_toy_story.nota.mean()) - pegando a media do filme com arredondamento de duas casas decimais
-- 
 - order = total_de_lingua_de_outro_filmes.index) - organizando por index ou seja valor
+
+## Juntando dois parametros
+- import numpy as np
+- filme1 = np.append(np.array[2.5] * 10), np.([3.5] * 10))
+- filme2 = np.append(np.array([5] * 10), np.array[1] * 10))
+- print(filme1.mean(), filme2.mean()) - imprimindo a media dos filmes
+- print(np.median(filme1)) - imprimindo a mediana
+- sns.displot(filme1) - mostrando o grafico do fime 1
+- plt.hist(filme1) - mostrando outro tipo de grafico
+- sns.boxplot(filme1) - mostrando outro tipo de grafico
+- plt.boxplot([filme1, filme2]) - mostrando as informações dos dois graficos 
+- sns.boxplot(x = "flimeId", y = "nota", data = notas.query("filmeId in [ 1,2,3,5]")) - mostarndo um grafico dos cinco filmes
+- notas_do_jumanji.nota.std() - pegando o desvio padrão 
+
+
+
