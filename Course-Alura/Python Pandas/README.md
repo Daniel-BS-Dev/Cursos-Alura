@@ -212,3 +212,7 @@
 ## Pegando a media do meu valor
 - grupo_bairro['valor'].mean()
 - grupo_bairro['valor','condominio'].mean(),round()
+
+## Estatistica descritivas
+- grupo_bairro['valor'].decribe().round(2)
+- grupo_bairro['valor'].aggregate(['min','max','sum']) - pegando os parametros agregados
