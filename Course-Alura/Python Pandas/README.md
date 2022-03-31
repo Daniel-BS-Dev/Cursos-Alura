@@ -216,3 +216,14 @@
 ## Estatistica descritivas
 - grupo_bairro['valor'].decribe().round(2)
 - grupo_bairro['valor'].aggregate(['min','max','sum']) - pegando os parametros agregados
+- grupo_bairro['valor'].aggregate(['min','max']).rename(columns = {'min':'minimo', 'max':'Maximo'}) - trazendo os atributos agregados e renomeando os atributos
+
+## Usando o matplotlib.pyplot as plt grafico
+- import matplotlib.pyplot as plt
+- plt.rc('figure', figsize = (20, 10))
+- grupo_bairro['valor'].std().plot.bar(color = 'blue')
+
+## Trazendo um grafico da media
+- fig = grupo_bairro['valor'].mean().plot.bar(color = 'blue')
+- fig.set_ylabel('valor do aluguel')
+- fig.set_title('valor media do aluguel por bairro', {'fontsize': 22})
