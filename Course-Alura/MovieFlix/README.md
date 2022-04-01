@@ -40,8 +40,8 @@
  ## Organizando minhas requisições Http
  - baixar o pacote AutoMapper.Extensions.Microsoft.dependencyInjection 8.1.1
  - como ele deve iniciar junto com a nossa aplicação vamos colocar ele no nosso startup
- - comando dentro do startup services.AddAutoMapper(appDomain.currentDomain.GetAssemblies());
- - para disse a esse autoMapper que ele tem que converter minhas classe deve criar uma pasta de perfil dentro ela eu vou criar o MovieProfile minha classe vai herdar de Profile
+ - comando dentro do startup services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+ - para dizer a esse autoMapper que ele tem que converter minhas classe deve criar uma pasta de perfil dentro ela eu vou criar o MovieProfile minha classe vai herdar de Profile
  - criar um construtor
  - dentro do construtor deve criar os metodos, eu vou querer um map de que para que
  - metodo criado 
