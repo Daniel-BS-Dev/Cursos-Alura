@@ -54,7 +54,7 @@
    - meu construtor recebe um IMapper mapper
    - _mapper = mapper
  - pronto para utilizar
- - Movie movie = _mapper.Map<Movie>(filmeDTO) - estou falando que quero converter o meu dto em um movie. Lembrado que movieDTO eu o nome da minha classe MovieDTO
+ - Movie movie = _mapper.Map<Movie>(movieDTO) - estou falando que quero converter o meu dto em um movie. Lembrado que movieDTO eu o nome da minha classe MovieDTO
  - Movie movie = _mapper.Map<MovieDTO>(filme) - estou falando que quero converter o meu fime para um dto 
  
  
