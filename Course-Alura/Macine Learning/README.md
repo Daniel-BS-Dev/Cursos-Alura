@@ -126,4 +126,30 @@
   - dados.tail() - ultimos elementos
 
 - criando o grafico
-  - 
+  - import seaborn as sns
+  - sns.scatterplot(x="horas_separadas", y="preco", data=dados)
+  - !pip install saeborn=0.9.0 - atualizando o meu seaborn essa deve ser uma declaração no começo do projeto
+   - sns.scatterplot(x="horas_separadas", hue="finalizados" y="preco", data=dados) - pinta o finalizado com outra cor
+   - sns.scatterplot(x="horas_separadas", y="preco", col="finalizados", data=dados) - criando dois graficos
+   - - sns.scatterplot(x="horas_separadas", y="preco", hue="finalizados" col="finalizados", data=dados) - separação de cor e coluna
+   
+- modelando o meus dados
+  - x = dados [['horas_esperadas', 'preco']]
+  - y = dados['finalizado']
+  -  - from sklearn.model_selection import train_test_split
+  - from sklearn.svm import LinearSVC
+  - from sklearn.metrics import accuracy_score
+  - SEED = 20 - numero declaro por o meu resultado fica variando a cada busca
+  - treino_x, teste_x, treino_y, teste_y = train_test_split(x, y, random_state = SEED, test_size = 0.25, stratify = y) - aqui eu uso o meu random state, o stratify e falando a minha maquina para ela stratificar de acordo com o y assim eu tenho uma aproximidade nas duas tabelas
+  - print("Treinaremos com %d elementos e testaremos com %d elementos" % (len(treino_x), len(teste_x)))
+  - modelo = LinearSVC()
+  - modelo.fit(train_x, train_y)
+  - previsoes = modelo.predict(train_x)
+  acuracia = accuracy_score(teste_y, previsoes)
+ - print("A acuracia foi %.2f%%" % accuracia)
+
+- Qual foi a previsão do guilherme
+  - import numpy as np
+  - privisoes_do_guilherme = np.ones(540) - criado 540 numero 1
+  - acuracia = accuracy_score(teste_y, previsoes_do_guilherme) * 100
+  - print("Aacuracia do guilherme foi %.2f%%" % acuracia"
