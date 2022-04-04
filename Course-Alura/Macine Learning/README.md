@@ -117,3 +117,13 @@
 
 - Buscando o total de 0 e 1 do y
   - treino_y.value_counts()
+
+- Invertendo valores
+  - troca = {
+  - 0 : 1,
+  - 1 : 0
+  - } dados.nao_finalizado.map(trocar) - na minha coluna não finalizado ele vai trocar o 1 para 0 e o 0 para 1
+  - dados.tail() - ultimos elementos
+
+- criando o grafico
+  - 
