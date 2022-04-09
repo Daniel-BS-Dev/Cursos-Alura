@@ -9,10 +9,10 @@
 - gerenciador de pacotes
 - gerencia pacotes do nuget para a solução
 - procurar
-- primeiro pacote microsoft.EntityFrameworkCore versão 5.0.5
+- primeiro pacote Microsoft.EntityFrameworkCore versão 5.0.5
 - antes de instalar marcar o projeto que estamos utilizando
-- segundo pacote microsft.entityframeworkcor.tools
-- terceiro pacote mysql.entityframeworkcore
+- segundo pacote microsft.EntityFrameworkCore.Tools
+- terceiro pacote mysql.EntityFrameworkCore
 
 ## Organizando o projeto
 - criar um nova pasta Data
