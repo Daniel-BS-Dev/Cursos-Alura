@@ -50,7 +50,7 @@
  - agora com um construtor eu posso iniciar esse mapper dentro da minha classe controller usando o tipo context criado antes
   
   ## Conversão de dados
- - para dizer a esse autoMapper que ele tem que converter minhas classe devo criar uma pasta de perfil dentro ela eu vou criar o MovieProfile minha classe vai herdar de Profile
+ - para dizer a esse autoMapper que ele tem que converter minhas classee  devo criar uma pasta de perfil dentro dela eu vou criar a classe MovieProfile minha classe vai herdar de Profile
  - criar um construtor
  - dentro do construtor deve criar os metodos, eu vou querer um map de que para que
  - metodo criado 
@@ -58,7 +58,7 @@
      - CreateMap<UpdateMovieDTO, Movie>(); 
      - CreateMap<Movie, MovieDTO>(); 
  - para utilizar preciso iniciar o meu automapper 
- - private IMapper variave no meu controller
+ - private IMapper variavel no meu controller
  - dentro do meu construtor MovieController
    - meu construtor recebe um IMapper mapper
    - _mapper = mapper
