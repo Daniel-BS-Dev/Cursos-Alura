@@ -17,7 +17,7 @@
 ## Organizando o projeto
 - criar um nova pasta Data
 - criar uma nova classe para fazer essa conexão nome movieContext
-- pra falar que ele é um contexto minha classe tem que herdar de DbContent
+- pra falar que ele é um contexto da minha classe tem que herdar de DbContent
 - criar um contrutor e dizer as opção DbContextOptions<MovieContext> movieContext é o conceito que estou trabalhando
 - criar uma prorpiedade DbSet<Aqui eu coloco o objeto que eu quero mapear e acessar dentro do meu banco> aqui o nome { get; set;}
  
