@@ -18,14 +18,17 @@
 - criar um nova pasta Data
 - criar uma nova classe para fazer essa conexão nome movieContext
 - pra falar que ele é um contexto da minha classe tem que herdar de DbContent
-- criar um contrutor recebendo os paramentro "DbContextOptions MovieContext".DbContextOptions é minha opção e movieContext é o conceito que estou trabalhando
-- criar uma prorpiedade DbSet Aqui eu coloco o objeto que eu quero mapear e acessar dentro do meu banco aqui o nome { get; set;} com esse dbset eu tenho acesso ao banco de dados da minha aplicação
+- criar um contrutor recebendo o paramentro "DbContextOptions MovieContext".DbContextOptions é minha opção e movieContext é o conceito que estou trabalhando
+- criar uma prorpiedade "DbSet Movie Movies{ get; set;}". DbSet vai mim dar o acesso a minha aplicação no banco de dados, movie é o nome a aplicação que quero acessar
  
  ## criando a string de conexão com o meu banco
  - appsettings.json - localizado abaixo do meu models
- - criar uma string de conexão abaixo de "AllowedHosts" cri uma string de conexão "connectionStrings":{
- "nome":"sevidor=localhost;nomeDoBanco=NomeQueEuQuiser;usuarioDoBanco=root;password=senha"
- }
+ - criar uma string de conexão abaixo de "AllowedHosts" criar uma string de conexão  "connectionStrings": { "TaskModelConnection":"server=localhost;database=taskModelDb;user=root;password=Da586310*"
+}
+- server - é o servidor da minha aplicação
+- database - nome do meu bando de dados. nome que eu quiser
+- user - usuario
+- password - senha
  
  ## Na classe startup usar minha ConnectionString
  - dentro do metodo configureService
@@ -35,8 +38,9 @@
  - coloca o key em meu id
  - required
  - abrir o console do nuget
- - escrever Add-Migration nameDaMigração
+ - escrever Add-Migration nameDaMigração, esse nome pode ser qualquer nome da minha preferência
  - para atualizar a mudança Update-Database
+ - no mysql para ver minha tabela criada "show databases". Para usar o banco criado "use nome do banco". Para mostrar minha tabela "show tables". Para ver os campos criados "desc nome da minha tabela"
  
  
  ## Organizando minhas requisições Http
