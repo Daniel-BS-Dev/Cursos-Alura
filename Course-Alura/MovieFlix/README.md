@@ -47,7 +47,10 @@
  - baixar o pacote AutoMapper.Extensions.Microsoft.dependencyInjection 8.1.1
  - como ele deve iniciar junto com a nossa aplicação vamos colocar ele no nosso startup
  - comando dentro do startup services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
- - para dizer a esse autoMapper que ele tem que converter minhas classe deve criar uma pasta de perfil dentro ela eu vou criar o MovieProfile minha classe vai herdar de Profile
+ - agora com um construtor eu posso iniciar esse mapper dentro da minha classe controller usando o tipo context criado antes
+  
+  ## Conversão de dados
+ - para dizer a esse autoMapper que ele tem que converter minhas classe devo criar uma pasta de perfil dentro ela eu vou criar o MovieProfile minha classe vai herdar de Profile
  - criar um construtor
  - dentro do construtor deve criar os metodos, eu vou querer um map de que para que
  - metodo criado 
